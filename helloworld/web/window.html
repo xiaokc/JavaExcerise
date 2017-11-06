@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript">
+        var win;
+        function winOpen() {
+            win = window.open("", "", "width=300,height=200");
+        }
+        function winClose() {
+            if (win) {
+               win.close();
+            }
+        }
+        function dialogAlert(){
+            alert("this is an alert dialog");
+        }
+        function dialogConfirm(){
+            var input = window.confirm("is this a confirm dialog?");
+            if(input){
+                alert("your input is " + input);
+            }
+        }
+        function dialogPrompt(){
+            var input = prompt("is this a prompt dialog?");
+            if(input){
+                alert("your input is " + input);
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="openWindow" onclick="winOpen()"><br>
+<input type="button" value="closeWindow" onclick="winClose()"><br>
+
+<input type="button" value="alertDialog" onclick="dialogAlert()"><br>
+<input type="button" value="confirmDialog" onclick="dialogConfirm()"><br>
+<input type="button" value="promptDialog" onclick="dialogPrompt()"><br>
+</body>
+</html>

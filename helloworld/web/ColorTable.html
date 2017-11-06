@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ColorTable变色表格</title>
+    <script language="JavaScript">
+        function changeColor(row){
+            document.getElementById(row).style.backgroundColor = '#CCCCFF';
+        }
+        function resetColor(row){
+            document.getElementById(row).style.backgroundColor = '';
+        }
+    </script>
+</head>
+<body>
+<table width="200" border="1" cellspacing="1" cellpadding="1">
+    <tr>
+        <th>学校</th>
+        <th>专业</th>
+        <th>人数</th>
+    </tr>
+    <tr align="center" id="row1" onmousemove="changeColor('row1')" onmouseout="resetColor('row1')">
+        <td>清华</td>
+        <td>计算机</td>
+        <td>23</td>
+    </tr>
+    <tr align="center" id="row2" onmousemove="changeColor('row2')" onmouseout="resetColor('row2')">
+        <td>北大</td>
+        <td>经管</td>
+        <td>40</td>
+    </tr>
+    <tr align="center" id="row3" onmousemove="changeColor('row3')" onmouseout="resetColor('row3')">
+        <td>北邮</td>
+        <td>通信</td>
+        <td>60</td>
+    </tr>
+</table>
+
+</body>
+</html>

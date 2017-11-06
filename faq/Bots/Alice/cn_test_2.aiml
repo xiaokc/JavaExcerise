@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<aiml>
+
+<category>
+    <pattern>我叫*</pattern>
+    <template><srai>我是*</srai>
+    <set name="name"><star/></set></template>
+</category>
+
+ <category>
+    <pattern>我是*</pattern>
+    <template>
+     你好，<set name="name"><star/></set>
+      <get name="name"/>。
+    </template>
+  </category>
+
+<category>
+        <pattern>T</pattern>
+        <template>
+            <think>
+                <system>
+                    String learn(String question,String answer){
+                    return question+":"+answer;
+                    }
+                </system>
+            </think>
+             您已进入机器人调教模式，请输入问题和答案，格式如下：Q问题A答案。如：Q你好吗？A我很好。
+             或者您可以在问题中加入“*”符号，比如：Q你*好A谢谢，当您输入“你真好”或者“你很好”时，机器人都会回答“谢谢”
+        </template>
+
+    </category>
+
+    <category>
+        <pattern>* 教你 *</pattern>
+        <template>
+            <srai>T</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Q * A *</pattern>
+        <template>
+            谢谢，我已经学会了，不信来试试看
+            <gossip>
+                <system>learn("<star index="1"/>","<star index="2"/>" )
+                </system>
+            </gossip>
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <script language="JavaScript">
+        //鼠标移动到相应到DIV上显示
+        function show(menu) {
+            document.getElementById(menu).style.visibility = "visible";
+        }
+        //隐藏所有到DIV
+        function hide() {
+            document.getElementById("menu1").style.visibility = "hidden";
+            document.getElementById("menu2").style.visibility = "hidden";
+            document.getElementById("menu3").style.visibility = "hidden";
+        }
+    </script>
+</head>
+<body>
+<table>
+
+</table>
+<tr bgcolor="#7fff00">
+    <td width="80" onmousemove="show('menu1')" onmouseout="hide()">菜单一</td>
+    <td width="80" onmousemove="show('menu2')" onmouseout="hide()">菜单二</td>
+    <td width="80" onmousemove="show('menu2')" onmouseout="hide()">菜单三</td>
+</tr>
+
+<div id="menu1" onmousemove="show('menu1')" onmouseout="hide()"
+     style="background: #9999FF;position: relative;;left: auto;top: auto;width: auto;visibility: hidden">
+    <span>子菜单一</span><br>
+    <span>子菜单二</span><br>
+    <span>子菜单三</span><br>
+
+</div>
+<div id="menu2" onMouseMove="show('menu2')"
+     onMouseOut="hide()" style="background: #9999FF;position: relative;;left: auto;top: auto;width: auto;visibility: hidden">
+    <span >子菜单一</span><br> <span>子菜单二</span><br> <span>子菜单三</span><br>
+</div>
+<div id="menu3" onMouseMove="show('menu3')"
+     onMouseOut="hide()" style="background: #9999FF;position: relative;;left: auto;top: auto;width: auto;visibility: hidden">
+    <span >子菜单一</span><br> <span>子菜单二</span><br> <span>子菜单三</span><br>
+</div>
+
+</body>
+</html>

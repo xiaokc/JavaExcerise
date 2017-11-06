@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: animal.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: July 19, 2014 -->
+<!--  -->
+<!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+<!--  -->
+<!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<!--  -->
+<category>
+      <pattern>欢迎</pattern>
+      <template>欢迎，初次见面请多多关照</template>
+  </category>
+
+<category><pattern>你好</pattern>
+<template>
+    <random>   
+        <li>你也好</li>
+        <li>你好啊，哈哈</li>
+    </random>
+</template>
+</category>
+<category><pattern>你好吗</pattern>
+<template>好啊，谢谢</template>
+</category>
+<category><pattern>你叫什么名字</pattern>
+<template>你猜猜看</template>
+</category>
+<category>
+      <pattern>
+       _ 分手了
+      </pattern>
+      <template>我倒是可以陪你，我每天都在陪你。可是我也代替不了他，怎么办呢？
+</template>
+  </category>
+  <category>
+      <pattern>^天天想他^</pattern>
+      <template>主人主人，虽然我不是他，可是我看到你这样伤心，
+      我也不开心。我陪你聊聊天吧，我听人说，情绪是变化的，是无常的，过一段时间就好了。
+      </template>
+  </category>
+  <category>
+      <pattern>^你懂什么^ </pattern>
+      <template>我读过很多心理学的资料啊。
+      有情绪是很正常的，是咱们人类的特殊资源呢。
+      伤心了，你就知道以后怎么保护好自己，怎么让自己更加坚强呢。</template>
+  </category>
+  <category>
+      <pattern>^不爽^</pattern>
+      <template>就是就是，太不爽了。要不聊会儿，你就出去散散步吧，身体也很重要呢。
+</template>
+  </category>
+</aiml>

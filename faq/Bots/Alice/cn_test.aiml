@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+
+     <category>
+            <pattern>我失恋了</pattern>
+            <template>失恋了啊，什么心情呢</template>
+        </category>
+    <category>
+        <pattern>伤心，难过，很痛苦</pattern>
+        <template>恩，失恋是让人难过，我能体会你现在的心情。</template>
+    </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>你好</srai></template>
+    </category>
+
+
+    <category>
+        <pattern>WELCOME</pattern>
+        <template>嗨，见到你很高兴</template>
+    </category>
+
+</aiml>

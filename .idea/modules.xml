@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commonjava/commonjava.iml" filepath="$PROJECT_DIR$/commonjava/commonjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faq/faq.iml" filepath="$PROJECT_DIR$/faq/faq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/headfirst/headfirst.iml" filepath="$PROJECT_DIR$/headfirst/headfirst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld/helloweb.iml" filepath="$PROJECT_DIR$/helloworld/helloweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ik/ik.iml" filepath="$PROJECT_DIR$/ik/ik.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc/imooc.iml" filepath="$PROJECT_DIR$/imooc/imooc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interview/interview.iml" filepath="$PROJECT_DIR$/interview/interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leet/leet.iml" filepath="$PROJECT_DIR$/leet/leet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
+    </modules>
+  </component>
+</project>
